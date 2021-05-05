@@ -1,12 +1,8 @@
 
 import cv2,os
-import shutil
-import numpy as np
 from tkinter import*
 
 win=Tk()
-#w, h = win1.winfo_screenwidth(), win1.winfo_screenheight()
-#win1.geometry("%dx%d" % (w, h))
 win.title("Welcome to face detection")
 win['background']="#ff7e67"
 win.geometry("500x300")
@@ -45,9 +41,7 @@ def TakeImages(name):
         cv2.destroyAllWindows() 
         
     else:
-        print("no")
-
-    
+        print("no")    
 
 lb=Label(win,text="Enter name")
 lb.place(x=100,y=100,width=100,height=30)
